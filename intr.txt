@@ -1,3 +1,21 @@
+linting (checking whether the proper format is being followed or not)
+All the manual testing phases disceussed above that will be carried out by the opaeration team ca'nt thrive in this fast growing age, because it takes a lot of time. That's why  automation comes in.
+
+That's where CI/CD(Continuous Integration/ Continous Deployment) comes in.. some of this tools are:
+Jenklins, gitlab, Azure DevOps, --- They are called CI/CD developemnrt pipelines
+They are called pipleies because it contians multiples steps such as (testing-->linting---> code quality )
+Each of the steps in the the pipeline can't be skipped
+
+Pipelines is divided into two parts:
+CI pipeline ---> main agenda is to make code ready for deployment, it means you have to properly test, check quality and bundle it..
+CD piplein ---> It's what is going to create out Infratsructire environments for us.. It's where the deployments comes in.. the dev, staging , prod environemtns etc..
+And  Jenklings can be used to achievev this.
+
+How Deployment happnes...
+Lets imaginne the bundle of our code is created.. e.g in node.. npm run build has being used..
+The bundle can nthen be deployed on a server , and in doing so a hardware is needed.. You can do this personally by creating ur own data centers(whcih is not always recommended for startups)
+
+
 AWS CLOUD
 
 DATA CENTERS:  Where your hardware devices will be kept. Where all the services will be deployed
@@ -9,5 +27,33 @@ How to Choose OS to be used  on AWS:
 Windwos : It's heavy, it's not open source, U can't customized much on windows
 Linux: It's used because  ot's open source, lighweight, and stable, security. It's used
 for creating and running long running jobs.
+Comapnies took the current linux distribution taking it as their base and updating it and selling it as their own distribution, whci are created for different use cases..
+
+You can can creat ur own linux distribution. Take current version of linux condol and add my own features and customize it, bundle it and name it as my own..
+RedHat/Ubuntu ---> commonly used for running servers..
+Redhat is going to be used in this training..
+Redhat has ---> Fedora centOs (Open source) and Redhat enterprise(mostly companies buys this)
+
+whenever you wannt to ru any application you have a hardware, and ontop of the hardware you will setup an OS then you can create application.
+Earlier you will use bear metod.. you go to the market, Buy ur hardware, install ur OS and then run ur application (which will cost you)
+This manual and bear method has some disadvantges: it's not scalabe, ieffiecnt in cost management.
+
+Virtualization
+In top of  a single hardware different  OS can run on a single machine. with the help of Hybervisor.
+We have created the virtual representaion of the machine. They called virtual machines
+Virtualization gave birth to cloud computing..
+Different Os using a "Shared Hardware "
+It helps in efficient resource management.
+
+Security groups:
+Inound rule: Who can come in my application
+
+
+
+Conternarization
+How to run multiple services in the same OS, and to enure this service can run independently..
+It's more like an OS layered virtualization.
 
 We will get Hardaware from AWS, then application will be deployed on a server on AWS.
+
+ 
