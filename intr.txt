@@ -1,0 +1,13 @@
+AWS CLOUD
+
+DATA CENTERS:  Where your hardware devices will be kept. Where all the services will be deployed
+
+To prevent downtime, multiples copies of the application can be deployed on different servers
+availability zones
+
+How to Choose OS to be used  on AWS:
+Windwos : It's heavy, it's not open source, U can't customized much on windows
+Linux: It's used because  ot's open source, lighweight, and stable, security. It's used
+for creating and running long running jobs.
+
+We will get Hardaware from AWS, then application will be deployed on a server on AWS.
