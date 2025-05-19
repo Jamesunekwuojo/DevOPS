@@ -49,13 +49,18 @@ Image Registry ---> Where all images stored.  Images  reduces configuration task
 docker ps --- showing all running containers..
 docker run it -- it means iteractive terminal
 dcoker inspect -- > to ispect docker infos
+docker run it -d --> runinng contatainer in detached mode.
 
 Container haas it's own Ip address and file system
 ctrl +p +q --> container will still be running and you get out of the container
 
+We have three major things in OS: Hard disk, RAM, CPU, Wheneer a software is being istalled, it is installed in the hard disk. Then the prohram is being loaded on the RAM.. The program will be runnning in the RAM called Process with process id PID
+pi -aux | grep httpd
 DOCKER ARCHITECTURE
 Docker Host --(Hardware, OS )
 Docker Deamon -- (it is the main docker engines)
+
+
 
 
 
