@@ -10,9 +10,52 @@ In the vim editor, the following are keys to use to navigate
 i - insert
 
 CI/CD PIPELINEs
+Manul process:
 1. Clone  Repository in the virtual machine. If git is not install, install it.
 2. Check whether I have python installed or not in my virtual liuxunderwise I can use yum to install python3.
 3. You have to install all the python dependeciis in the requirements file of the application usinf python package manager pip.
 Then after installing pip, we can nw try installing python dependencies using pip.
 4. After instaling the depedencies.. 
 5. Us pythest command to test whether all the cases are working or not.
+When a change is being made in the github repositiry.. you will have to pull the changes in the virtual machine. By running 'git pull'
+pythest is used only for unit testing.
+Then you cana now intergate sonarque to highlight and check for code quality and corretness.
+
+
+6. Flake8 will check for readability and give more information about  the code
+
+Image having an application that has alot of traaffic and they is need to produce more replica or instances of the server. DOing thsi mnually will consume time.. and also  do that manually is prone to making mistakes, repeating the  same process.
+
+https://teams.live.com/l/community/FEAPq30Qrz-xVT15QM
+
+
+Containerization:
+The requirement for containerizatio is for you to give them ur server details. You are packaging ur application into a bundle. Which has all the requirements used to launch the application
+Docker is a tool used for conternization.
+A bundle will be created using docker, which can be used for running  the application.
+
+VIRTUALIZATION vs CONTERNIRISATION(OS -level virtualization)
+
+In Virtualization we have ---> Hardware ---> Hyberisor ---> Different appplicatios 
+
+In Coonternirization we have ----> Hardawre ---> Os ---->  Can have multiple OS
+
+Each Containers are  independent, but they are runnning on a sing OS.
+
+In virtualization different OS are created, In conternirrization, multiple applications using one OS.
+
+
+Image Registry ---> Where all images stored.  Images  reduces configuration tasks for us..
+docker ps --- showing all running containers..
+docker run it -- it means iteractive terminal
+dcoker inspect -- > to ispect docker infos
+
+Container haas it's own Ip address and file system
+ctrl +p +q --> container will still be running and you get out of the container
+
+DOCKER ARCHITECTURE
+Docker Host --(Hardware, OS )
+Docker Deamon -- (it is the main docker engines)
+
+
+
