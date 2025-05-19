@@ -1,3 +1,18 @@
+
 We have:
 -->Requisition testing
 -->Performance testing.
+LINUX
+/etc ---> folder where you will find all your configuration files
+cd ---> change directory..
+vim editor --> it's lack a notepad (an editor) in  linux.
+In the vim editor, the following are keys to use to navigate
+i - insert
+
+CI/CD PIPELINEs
+1. Clone  Repository in the virtual machine. If git is not install, install it.
+2. Check whether I have python installed or not in my virtual liuxunderwise I can use yum to install python3.
+3. You have to install all the python dependeciis in the requirements file of the application usinf python package manager pip.
+Then after installing pip, we can nw try installing python dependencies using pip.
+4. After instaling the depedencies.. 
+5. Us pythest command to test whether all the cases are working or not.
