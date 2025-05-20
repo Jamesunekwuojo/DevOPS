@@ -1,1 +1,38 @@
+JENKINS
+You will ned to pull the jeckins docker image before you can run it.
 
+Jenkins automates CI/CD process...  from testing, docker building, code analysis etc.. Jenkins should handles. With the help of pluins Jenkins should know  how to communicate with Gthub..or other platforms
+
+Jenkisn integrates all the CI/CD processes together.
+
+In Jenkins you will create your pipeline.. with stages,the pipelines is written in Ruby mostly 
+Each stag in jenkins has a step to follow.
+The "sh" ---> It's used to tell jenkins that is shell command
+1.In your pileine.. you will tell jenkis to download your code,
+2. Tell it it to install python
+3. Install pip
+4. INSTALL PYTHON DEPENDENCIES
+4. Execute testcases
+5. Flake8 test cases
+6. Build Docker image
+7. Deplyment
+   docker run.. with container mapping
+
+Jenkins Multi Load cluster
+We have:
+Master Node --> It's the one that manages everything. 
+Multi Node clusters ---> It's the one that contains the worker Nodes. In worker node you will configure Agents.
+
+We are creating a worker node, because we are distributng th load on the master node. 
+A worker node must hae agents working, it maintains comunication between worker nodes and master nodes. Java files are writtenn it '.jar' extension
+
+You will have to connect your Master node with  your worker node agents. I'm running the agents program in my worker node and it will listen for communications from the master nodes
+
+Anytme the docker port is being changed another image will be created
+
+
+You can set webHooks on github such that it can notified Jenkins whenever they is a push request.. S the Github WeBhook will trigger Jenkins . You also have to add Github WebHook in the trigger settings in github 
+
+We use docker for conternarization because it's helps in microservice architecture.
+You can containerize different services on different container and they can communicate with each other via APIs RESTful or GRPC. The microservice architecture can scale independently
+In monolithic architecture we have single point of failure. 
